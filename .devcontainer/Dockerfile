@@ -54,7 +54,7 @@ USER root
 #    && jupyter server extension disable nbclassic  
 
 # Install R libraries
-COPY packages.R /install.R
+COPY install.R /install.R
 RUN ln -s /bin/tar /bin/gtar
 RUN Rscript install.R
 
