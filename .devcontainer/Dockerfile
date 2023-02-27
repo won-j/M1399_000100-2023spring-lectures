@@ -56,7 +56,7 @@ USER root
 # Install R libraries
 COPY .devcontainer/install.R /install.R
 RUN ln -s /bin/tar /bin/gtar
-RUN Rscript install.R
+RUN Rscript /install.R
 
 ## Extra R packages
 #RUN conda install --quiet --yes \
