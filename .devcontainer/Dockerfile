@@ -55,10 +55,16 @@ FROM jupyter/datascience-notebook
 
 
 ## Extra R packages
-#RUN conda install --quiet --yes \
-#    'r-base=4.0.0' \
-#    'r-caret=6.*' \
-#    'r-crayon=1.3*' \
-#    'r-devtools=2.3*' \
-#    'r-forecast=8.12*' \
-#    'r-hexbin=1.28*' 
+RUN conda install --quiet --yes \
+    'r-lobstr=1.1*' \
+    'r-pryr=0.1*' \
+    'r-gmp=0.7*' \
+    'r-float=0.3*' \
+    'r-Rcpp=1.0*' \
+    'r-Matrix=1.5*' \
+    'r-mvtnorm=1.1*' \
+    'r-microbenchmark=1.4.*' \
+    'r-SparseM=1.8*' \
+    'r-statmod=1.5.*' \
+    'r-plot3D=1.4*' \
+    'r-animation=2.7*'
