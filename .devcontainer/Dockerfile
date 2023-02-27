@@ -1,6 +1,6 @@
 FROM jupyter/datascience-notebook
 
-#USER root
+USER root
 
 ## [Optional] Uncomment this section to install additional OS packages.
 ## These packages are to get PDF export via LaTeX (minimal) and via webpdf
