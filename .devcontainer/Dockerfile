@@ -56,16 +56,14 @@ USER root
 
 ## Extra R packages
 RUN conda install --quiet --yes \
-    'r-lobstr=1.1.*' 
+    'r-lobstr=1.1.*' \
+    'r-pryr=0.1.*' \
+    'r-gmp=0.6*' 
 #\
-#    'r-pryr=0.1*' \
-#    'r-gmp=0.7*' \
 #    'r-float=0.3*' \
-#    'r-Rcpp=1.0*' \
-#    'r-Matrix=1.5*' \
+#    'r-Matrix=1.4*' \
 #    'r-mvtnorm=1.1*' \
 #    'r-microbenchmark=1.4.*' \
 #    'r-SparseM=1.8*' \
-#    'r-statmod=1.5.*' \
-#    'r-plot3D=1.4*' \
-#    'r-animation=2.7*'
+#    'r-statmod=1.4.*' \
+#    'r-plot3D=1.4*' 
