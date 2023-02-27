@@ -57,9 +57,9 @@ USER root
 ## Extra R packages
 RUN conda install --quiet --yes \
     'r-lobstr=1.1.*' \
-    'r-pryr=0.1.*' 
+    'r-pryr=0.1.*' \
+    'r-gmp=0.6_6' 
 #\
-#    'r-gmp=0.6*' \
 #    'r-float=0.3*' \
 #    'r-Matrix=1.4*' \
 #    'r-mvtnorm=1.1*' \
