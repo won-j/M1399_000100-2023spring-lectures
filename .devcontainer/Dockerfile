@@ -3,7 +3,7 @@ FROM jupyter/datascience-notebook
 ## install imagemagick
 USER root
 RUN apt-get update 
-RUN apt-get install software-properties-common
+RUN apt-get install -y software-properties-common
 RUN apt-get update && \
     add-apt-repository -y ppa:cran/imagemagick && \
     apt-get update && \
