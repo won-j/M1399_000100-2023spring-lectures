@@ -62,7 +62,8 @@ USER ${NB_UID}
 
 RUN R -e "install.packages(c('lobstr', 'pryr', 'gmp', 'float', 'mvtnorm', 'microbenchmark', 'SparseM', 'statmod', 'plot3D', 'Rlinsolve'), dependencies=TRUE, repos='http://cran.rstudio.com/')" 
 #&& \
-#    R -e "remotes::install_github('coolbutuseless/uint8')"
+
+RUN R -e "remotes::install_github('coolbutuseless/uint8')"
 
 ## Extra R packages
 #RUN conda install --quiet --yes \
@@ -73,6 +74,5 @@ RUN R -e "install.packages(c('lobstr', 'pryr', 'gmp', 'float', 'mvtnorm', 'micro
 #    'r-Matrix=1.4*' \
 #    'r-mvtnorm=1.1*' \
 #    'r-microbenchmark=1.4.*' \
-#    'r-SparseM=1.8*' \
-#    'r-statmod=1.4.*' \
+#    'r-SparseM=1.8*' \ #    'r-statmod=1.4.*' \
 #    'r-plot3D=1.4*' 
