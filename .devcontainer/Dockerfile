@@ -60,9 +60,8 @@ FROM jupyter/datascience-notebook
 
 USER ${NB_UID}
 
-RUN R -e "install.packages(c('lobstr', 'pryr', 'gmp', 'float', 'mvtnorm', 'microbenchmark', 'Rlinsolve', 'SparseM', 'statmod', 'plot3D', 'animation'), dependencies=TRUE, repos='http://cran.rstudio.com/')" 
-# && \
-#    R -e "remotes::install_github('coolbutuseless/uint8')"
+RUN R -e "install.packages(c('lobstr', 'pryr', 'gmp', 'float', 'mvtnorm', 'microbenchmark', 'Rlinsolve', 'SparseM', 'statmod', 'plot3D', 'animation'), dependencies=TRUE, repos='http://cran.rstudio.com/')" && \
+    R -e "remotes::install_github('coolbutuseless/uint8')"
 
 ## Extra R packages
 #RUN conda install --quiet --yes \
