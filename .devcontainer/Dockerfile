@@ -1,6 +1,10 @@
 FROM jupyter/datascience-notebook
 
-#USER root
+## install imagemagick
+USER root
+RUN add-apt-repository -y ppa:cran/imagemagick && \
+    apt-get update && \
+    apt-get install -y libmagick++-dev
 
 ## [Optional] Uncomment this section to install additional OS packages.
 ## These packages are to get PDF export via LaTeX (minimal) and via webpdf
