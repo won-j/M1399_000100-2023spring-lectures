@@ -6,8 +6,10 @@ USER root
 #RUN apt-get install -y software-properties-common
 #RUN apt-get update && \
 #    add-apt-repository -y ppa:cran/imagemagick && \
-RUN apt-get update && \
-    apt-get install -y libmagick++-dev
+#RUN apt-get update && \
+#    apt-get install -y libmagick++-dev
+
+RUN conda install -c conda-forge imagemagick
 
 ## [Optional] Uncomment this section to install additional OS packages.
 ## These packages are to get PDF export via LaTeX (minimal) and via webpdf
