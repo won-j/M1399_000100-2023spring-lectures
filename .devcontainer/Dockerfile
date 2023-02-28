@@ -69,7 +69,7 @@ RUN conda install -c conda-forge imagemagick
 
 USER ${NB_UID}
 
-RUN R -e "install.packages(c('lobstr', 'pryr', 'gmp', 'float', 'mvtnorm', 'microbenchmark', 'SparseM', 'statmod', 'plot3D', 'Rlinsolve'), dependencies=TRUE, repos='http://cran.rstudio.com/')" 
+RUN R -e "install.packages(c('lobstr', 'pryr', 'gmp', 'float', 'mvtnorm', 'microbenchmark', 'SparseM', 'statmod', 'plot3D', 'Rlinsolve', 'animation'), dependencies=TRUE, repos='http://cran.rstudio.com/')" 
 #&& \
 
 RUN R -e "remotes::install_github('coolbutuseless/uint8')"
