@@ -1,6 +1,6 @@
 FROM jupyter/datascience-notebook
 
-USER root
+#USER root
 
 ## [Optional] Uncomment this section to install additional OS packages.
 ## These packages are to get PDF export via LaTeX (minimal) and via webpdf
@@ -53,10 +53,15 @@ USER root
 #RUN pip install jupyterlab-link-share \
 #    && jupyter server extension disable nbclassic  
 
-# Install R libraries
-COPY .devcontainer/install.R /install.R
-RUN ln -s /bin/tar /bin/gtar
-RUN Rscript /install.R
+## Install R libraries
+#COPY .devcontainer/install.R /install.R
+#RUN ln -s /bin/tar /bin/gtar
+#RUN Rscript /install.R
+
+USER ${NB_UID}
+
+RUN R -e "install.packages(c('languageserver', 'httpgd', 'lobstr'), dependencies=TRUE, repos='http://cran.rstudio.com/')" && \
+    R -e "remotes::install_github('oolbutuseless/uint8')"
 
 ## Extra R packages
 #RUN conda install --quiet --yes \
