@@ -3,16 +3,10 @@ FROM jupyter/datascience-notebook
 ## install imagemagick
 USER root
 
-RUN python -m pip install --upgrade pip \
-    && python -m pip install \ 
-# pycse nbconvert nbconvert[webpdf] \
-#    plotly \
-#    pytest \
-#    black flake8 pylint \
-#    pycse pint quantities pyDOE2\
-    lmfit pysr jax[cpu] \
-    jupyterlab-git jupyter-videochat # \
-#    && jupyter labextension install plotlywidget 
+RUN python -m pip install --upgrade pip # \
+#    && python -m pip install \ 
+#	jax[cpu] \
+#    jupyterlab-git # jupyter-videochat \
 
 RUN conda install -c conda-forge imagemagick
 
