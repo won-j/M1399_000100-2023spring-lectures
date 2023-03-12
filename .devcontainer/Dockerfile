@@ -24,7 +24,6 @@ COPY .devcontainer/jupyter_lab_config.py /home/jovyan/.jupyter/jupyter_lab_confi
 COPY .devcontainer/jupyter_server_config.json /home/jovyan/.jupyter/jupyter_server_config.json
 
 RUN fix-permissions /home/jovyan/.jupyter
-RUN fix-permissions /home/jovyan/.local
 
 ## Install R libraries
 USER ${NB_UID}
