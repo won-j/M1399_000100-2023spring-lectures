@@ -4,7 +4,8 @@ FROM jupyter/datascience-notebook
 USER root
 
 RUN python -m pip install --upgrade pip \
-#    && python -m pip install pycse nbconvert nbconvert[webpdf] \
+    && python -m pip install \ 
+# pycse nbconvert nbconvert[webpdf] \
 #    plotly \
 #    pytest \
 #    black flake8 pylint \
