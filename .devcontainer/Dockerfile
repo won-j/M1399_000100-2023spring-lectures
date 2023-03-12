@@ -11,7 +11,7 @@ RUN python -m pip install --upgrade pip \
 #    black flake8 pylint \
 #    pycse pint quantities pyDOE2\
     lmfit pysr jax[cpu] \
-    jupyterlab-git jupyter-videochat \
+    jupyterlab-git jupyter-videochat # \
 #    && jupyter labextension install plotlywidget 
 
 RUN conda install -c conda-forge imagemagick
