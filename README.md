@@ -16,6 +16,10 @@ For more details, see <https://docs.github.com/en/codespaces/developing-in-codes
 1. Make sure `git` is installed on your system.
 2. Open your terminal.
 3. Clone this repository. Follow the instructions from <https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository>.
+	![Clone](https://docs.github.com/assets/cb-33207/images/help/repository/https-url-clone-cli.png)
+	```
+	$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+	```
 4. Install [Anaconda](https://www.anaconda.com/products/distribution) if not already. If you use Windows, follow the instructions from [here](https://pythonforundergradengineers.com/installing-anaconda-on-windows.html).
 5. Install the R package **IRKernel**. Follow the instructions from <https://irkernel.github.io/installation/>.
 6. Run **Anaconda Navigator**.
