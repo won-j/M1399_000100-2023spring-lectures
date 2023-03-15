@@ -1,23 +1,26 @@
 # M1399.000100 Computational Statistics @ SNU 2023
 
-This is the course website for M1399.000100: "Computational Statistics" at Seoul National University in Spring 2023. Lecture notes and open source code will all be available on this website.
+This repository provides a lecture note for [M1399.000100: "Computational Statistics"](https://won-j.github.io/M1399_000100-2023spring/) at Seoul National University in Spring 2023. This note is in the [Jupyter Notebook](https://jupyter.org) format.
 
-## Instructor 
+## Creating a codespace for this lecture note
 
-Joong-Ho (Johann) Won
+1. Log on the Github. Make sure your account is Pro.
+2. Click the **<> Code** button above, then click the **Codespaces** tab.
+	![Create a Codespace](https://docs.github.com/assets/cb-83995/images/help/codespaces/default-machine-type.png)
+3. Create your codespace, either using the default options, or after configuring advanced options.
 
-**Email**: wonj AT stats DOT snu DOT ac DOT kr
-
-**Class Time and classroom**: TTh 15:30 - 16:45, 24-101
-
-**Office Hours**: By appointment.
-
-**Textbook**: 
-- 심송용. 통계계산. 교문사, 2006. 
-
-
-**References**: 
-- G.H. Givens and J.A. Hoeting. Computational Statistics (2ed). Wiley, 2013. 
-- N. Matloff. The Art of R Programming. No Starch Press, 2011. 
-
+For more details, see <https://docs.github.com/en/codespaces/developing-in-codespaces/creating-a-codespace-for-a-repository>
 	
+## Running this lecture note on your local machine
+
+1. Make sure `git` is installed on your system.
+2. Open your terminal.
+3. Clone this repository. Follow the instructions from <https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository>.
+4. Install [Anaconda](https://www.anaconda.com/products/distribution) if not already. If you use Windows, follow the instructions from [here](https://pythonforundergradengineers.com/installing-anaconda-on-windows.html).
+5. Install the R package **IRKernel**. Follow the instructions from <https://irkernel.github.io/installation/>.
+6. Run **Anaconda Navigator**.
+	![Anaconda Navigator](https://runestone.academy/ns/books/published/httlads/_images/navigator.png)
+7. Launch **Jupyter Lab**.
+8. Change your directory to your cloned repository.
+9. Open an appropriate `*.ipynb* file.
+
