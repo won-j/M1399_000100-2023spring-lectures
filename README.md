@@ -22,5 +22,5 @@ For more details, see <https://docs.github.com/en/codespaces/developing-in-codes
 	![Anaconda Navigator](https://runestone.academy/ns/books/published/httlads/_images/navigator.png)
 7. Launch **Jupyter Lab**.
 8. Change your directory to your cloned repository.
-9. Open an appropriate `*.ipynb* file.
+9. Open an appropriate `*.ipynb` file.
 
